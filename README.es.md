@@ -69,20 +69,6 @@ Proyecto original de [bitcoinalexis](https://github.com/bitcoinalexis/PanterBots
    ```
    El bot creará un archivo de configuración en `~/.panterbots/config.json`. Edita este archivo con tus credenciales de Telegram y Bybit.
 
-## 🚦 Uso
-
-Una vez configurado, simplemente inicia el bot:
-```bash
-python SuperTrendFree/PanterTrend.py
-```
-
-## 📝 Configuración (config.json)
-
-- `SYMBOL`: Lista de pares separados por comas (ej: "BTCUSDT,ETHUSDT,DOGEUSDT").
-- `TIMEFRAMES`: Lista de intervalos (ej: ["15", "60", "240"]).
-- `TELEGRAM_BOT_TOKEN`: Tu token de bot de @BotFather.
-- `TELEGRAM_CHAT_ID`: El ID de tu canal o usuario de Telegram.
-
 ## 🔐 Seguridad (Recomendado)
 
 Para evitar la exposición accidental de secretos (API Keys, Tokens), este proyecto incluye hooks de **pre-commit**.
@@ -97,6 +83,22 @@ Para evitar la exposición accidental de secretos (API Keys, Tokens), este proye
    pre-commit run --all-files
    ```
    Esto buscará automáticamente secretos, corregirá el formato y analizará el código antes de cada commit.
+
+**Nota:** El directorio `./local_work` está excluido del seguimiento de git para mantener privados los archivos de desarrollo local y datos sensibles.
+
+## 🚦 Uso
+
+Una vez configurado, simplemente inicia el bot:
+```bash
+python SuperTrendFree/PanterTrend.py
+```
+
+## 📝 Configuración (config.json)
+
+- `SYMBOL`: Lista de pares separados por comas (ej: "BTCUSDT,ETHUSDT,DOGEUSDT").
+- `TIMEFRAMES`: Lista de intervalos (ej: ["15", "60", "240"]).
+- `TELEGRAM_BOT_TOKEN`: Tu token de bot de @BotFather.
+- `TELEGRAM_CHAT_ID`: El ID de tu canal o usuario de Telegram.
 
 ## 📄 Licencia
 
