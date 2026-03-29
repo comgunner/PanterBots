@@ -69,23 +69,6 @@ Proyecto original de [bitcoinalexis](https://github.com/bitcoinalexis/PanterBots
    ```
    El bot creará un archivo de configuración en `~/.panterbots/config.json`. Edita este archivo con tus credenciales de Telegram y Bybit.
 
-## 🔐 Seguridad (Recomendado)
-
-Para evitar la exposición accidental de secretos (API Keys, Tokens), este proyecto incluye hooks de **pre-commit**.
-
-1. **Instala los hooks**:
-   ```bash
-   pre-commit install
-   ```
-
-2. **Ejecuta una revisión manual**:
-   ```bash
-   pre-commit run --all-files
-   ```
-   Esto buscará automáticamente secretos, corregirá el formato y analizará el código antes de cada commit.
-
-**Nota:** El directorio `./local_work` está excluido del seguimiento de git para mantener privados los archivos de desarrollo local y datos sensibles.
-
 ## 🚦 Uso
 
 Una vez configurado, simplemente inicia el bot:
