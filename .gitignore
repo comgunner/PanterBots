@@ -1,0 +1,107 @@
+# --- AI Agents Context Files ---
+CLAUDE.md
+GEMINI.md
+QWEN.md
+.claude/
+.agent/
+.qwen/
+.gemini/
+
+# --- Environment and Secrets ---
+.env
+.env.*
+*.env
+*.log
+supertrend_simple.log
+secrets.py
+auth.json
+# Local development folder
+local_work/
+/local_work/
+# Specific sensitive config
+SuperTrendFree/config.py
+
+# --- Python ---
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / Build
+bin/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Unit test / Coverage reports
+htmlcov/
+.tox/
+.nosetrc
+.pytest_cache/
+pytestdebug.log
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# --- Virtual Environments ---
+# Root level
+/.venv/
+/venv/
+/ENV/
+/env/
+/.env/
+# Any nested envs
+.venv/
+venv/
+ENV/
+env/
+pyvenv.cfg
+pip-selfcheck.json
+
+# --- IDEs / Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings/
+
+# --- Development & Security ---
+.secrets.baseline
+.pre-commit-cache/
+
+# --- OS ---
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini

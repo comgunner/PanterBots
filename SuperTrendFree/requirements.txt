@@ -1,0 +1,12 @@
+# Core Dependencies for PanterBots SuperTrend
+requests
+pandas
+numpy
+pytz
+
+# CCXT Integration (Recommended)
+ccxt
+python-dotenv
+
+# Development & Security
+pre-commit
