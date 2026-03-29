@@ -80,8 +80,27 @@ python SuperTrendFree/PanterTrend.py
 
 - `SYMBOL`: Lista de pares separados por comas (ej: "BTCUSDT,ETHUSDT,DOGEUSDT").
 - `TIMEFRAMES`: Lista de intervalos (ej: ["15", "60", "240"]).
+- `ATR_PERIOD`: Período ATR del Supertrend (predeterminado: 10).
+- `ATR_MULTIPLIER`: Multiplicador ATR del Supertrend (predeterminado: 3.0).
 - `TELEGRAM_BOT_TOKEN`: Tu token de bot de @BotFather.
 - `TELEGRAM_CHAT_ID`: El ID de tu canal o usuario de Telegram.
+  - **Tip:** Reenvía un mensaje desde tu canal a [@username_to_id_bot](https://t.me/username_to_id_bot) para obtener el ID.
+- `BYBIT_API_KEY`: Tu clave API de Bybit.
+- `BYBIT_API_SECRET`: Tu secreto API de Bybit.
+
+**Ejemplo:**
+```json
+{
+    "SYMBOL": "1000CATUSDT,1000RATSUSDT,PNUTUSDT,SEIUSDT,BBUSDT,GUNUSDT,LQTYUSDT,KMNOUSDT,NAORISUSDT,APTUSDT,ARBUSDT,ACXUSDT,WIFUSDT,1MBABYDOGEUSDT,RONINUSDT,EDUUSDT",
+    "TIMEFRAMES": ["15", "60", "240"],
+    "ATR_PERIOD": 10,
+    "ATR_MULTIPLIER": 3.0,
+    "TELEGRAM_BOT_TOKEN": "YOUR_TELEGRAM_BOT_TOKEN",  # pragma: allowlist secret
+    "TELEGRAM_CHAT_ID": "YOUR_TELEGRAM_CHAT_ID",
+    "BYBIT_API_KEY": "YOUR_BYBIT_API_KEY",  # pragma: allowlist secret
+    "BYBIT_API_SECRET": "YOUR_BYBIT_API_SECRET"  # pragma: allowlist secret
+}
+```
 
 ## 📄 Licencia
 
